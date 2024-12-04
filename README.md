@@ -1,2 +1,2 @@
-# oilup-mobprog
+# I-Slang
 Final Project for Mobile Programming
