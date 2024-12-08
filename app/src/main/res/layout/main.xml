@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        android:gravity="center"
         android:background="#C85951">
 
         <TextView
@@ -27,8 +30,143 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="dra"
+            android:src="@drawable/baseline_toc_24"
+            android:layout_gravity="">
+
+        </ImageView>
 
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bahasa_isyarat"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFEBC0"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bahasa Isyarat"
+                android:textSize="20dp"
+                android:textColor="#AB5A54"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/galerry"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFEBC0"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galerry"
+                android:textSize="20dp"
+                android:textColor="#AB5A54"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info_aplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFEBC0"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info Aplikasi"
+                android:textSize="20dp"
+                android:textColor="#AB5A54"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFEBC0"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:textColor="#AB5A54"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFEBC0"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tutorial"
+                android:textSize="20dp"
+                android:textColor="#AB5A54"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center_vertical">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
