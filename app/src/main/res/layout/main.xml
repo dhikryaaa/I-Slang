@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:background="#C85951">
 
         <TextView
@@ -22,6 +23,11 @@
             android:paddingBottom="10dp">
 
         </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="dra"
 
     </LinearLayout>
 
