@@ -7,15 +7,16 @@
     android:orientation="vertical"
     android:background="@drawable/background">
 
+    <!-- Top NavBar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:background="#C85951">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
             android:textColor="#FFFFFF"
             android:textSize="36dp"
@@ -23,25 +24,29 @@
             android:paddingLeft="20dp"
             android:paddingEnd="20dp"
             android:paddingTop="10dp"
-            android:paddingBottom="10dp">
+            android:paddingBottom="10dp"
+            android:layout_weight="2">
 
         </TextView>
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:src="@drawable/baseline_toc_24"
-            android:layout_gravity="">
+            android:padding="10dp"
+            android:layout_gravity="end">
 
         </ImageView>
 
     </LinearLayout>
 
+    <!-- Card Content View -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
+        android:layout_marginTop="20dp"
         android:padding="20dp">
 
         <androidx.cardview.widget.CardView
@@ -51,7 +56,8 @@
             android:backgroundTint="#FFEBC0"
             app:cardCornerRadius="16dp"
             app:cardElevation="10dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,7 +80,8 @@
             android:backgroundTint="#FFEBC0"
             app:cardCornerRadius="16dp"
             app:cardElevation="10dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -97,7 +104,8 @@
             android:backgroundTint="#FFEBC0"
             app:cardCornerRadius="16dp"
             app:cardElevation="10dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +128,8 @@
             android:backgroundTint="#FFEBC0"
             app:cardCornerRadius="16dp"
             app:cardElevation="10dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -143,7 +152,8 @@
             android:backgroundTint="#FFEBC0"
             app:cardCornerRadius="16dp"
             app:cardElevation="10dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:clickable="true">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -161,12 +171,46 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <!-- Bottom NavBar -->
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/rounded_corner_rectangle">
 
+        </ImageView>
 
-    </LinearLayout>
+        <FrameLayout
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/circle_camera">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_camera_alt_24"
+                android:layout_gravity="center">
+
+            </ImageView>
+
+        </FrameLayout>
+
+    </FrameLayout>
 
 </LinearLayout>
